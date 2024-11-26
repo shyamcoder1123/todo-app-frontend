@@ -1,3 +1,34 @@
+# Frontend Todo Application
+
+This is the Frontend of a Full-Stack Todo Application built with the following technologies:
+- **Frontend**: React.js
+- **Backend**: Spring Boot
+- **Database**: MySQL
+
+The application allows users to manage their tasks by performing actions such as:
+- Adding, Editing, Deleting Todos
+- Marking Todos as Pending or Completed
+- Exporting Project Summary as an MD File
+- User authentication with Spring Security
+
+## Features
+- **Frontend** (React):
+  - Responsive UI for adding, updating, and deleting Todos
+  - Mark Todos as pending or completed
+  - View project summary and export it as a markdown file
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- **Node.js** (version 14 or later) - For running the React frontend
+- **npm** (comes with Node.js) - For managing frontend dependencies
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/todo-frontend.git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
