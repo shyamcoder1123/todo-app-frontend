@@ -4,7 +4,6 @@ import { getTodos, addTodo, updateTodo, deleteTodo, updateProject } from '../ser
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
-  console.log('Project ID:', projectId);
   const location = useLocation();
   const [todos, setTodos] = useState([]);
   const [newTodoTitle, setNewTodoTitle] = useState('');
@@ -14,7 +13,6 @@ const ProjectDetails = () => {
   const [isEditingTitle, setIsEditingTitle] = useState(false);
 
   useEffect(() => {
-    console.log('ProjectDetails component mounted');
     loadTodos();
   }, [projectId]);  // Added projectId dependency to reload todos if the projectId changes
 
