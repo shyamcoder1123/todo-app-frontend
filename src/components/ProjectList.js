@@ -14,7 +14,6 @@ const ProjectList = ({onProjectSelect}) => {
 
   const getUsernameFromToken = () => {
     const storedUsername = localStorage.getItem('username');
-    console.log('stored name',storedUsername);
     if (storedUsername) {
       return storedUsername;
     }
@@ -29,7 +28,6 @@ const ProjectList = ({onProjectSelect}) => {
     // setProjects(response.data);
     try {
       const response = await getProjects();
-      console.log('API Response:', response);
       setProjects(response.data || []);
     } catch (error) {
       console.error('Error loading projects:', error);
